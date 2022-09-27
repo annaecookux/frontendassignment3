@@ -65,6 +65,10 @@ function quiz() {
 		num++;
 		if (num = totalQuestion) {
 			num = 0;
+     /*
+    UPDATE:
+    every if/else conditional should have an else so I don't think this last if is correct    
+    */	
 
   document.write('<p>You got ${score} out of ${totalQuestion} questions correct.</p>');
 }
