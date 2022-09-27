@@ -4,11 +4,19 @@
     remove "<script>"
     */
 
+alert('Ready for a quiz?');
+quiz();
+console.log('hello');
+
+//console logging = if I can't figure out what a thing is, use console log to figure it out
 //this is a basic function with the name "quiz"
+// we don't need to define add a let without a 
 function quiz() {
 	let score = 0;
     let answer;
-    let quizQuestions = [1, 2, 3];
+
+// because the questions are in an array they are already indexed so I didnt need above
+// num references questions 
     let question = [
         'How many moons does Earth have?',
         'How many moons does Saturn have?', 
@@ -25,9 +33,14 @@ function quiz() {
 	
 	//*******get total number of questions
 	let totalQuestion = quizQuestions.count;
+    //what is totalQuestion try "console.log (totalQuestion);
+
 	
 	//*******generate random number for question
-	let num = Math.floor(Math.random() * quizQuestions);
+    //Math floor/math random is a common pattern used to generate a random number between 0-2 because of the floor
+    //math.random returns a random number between 0-1, when you multiply that by one nunmber by greater then floor it you get an even distribution of numbers
+    //math.floor rounds down the random number
+	let num = Math.floor(Math.random() * 3);
     
     /*
     UPDATE:
